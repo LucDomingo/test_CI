@@ -1,0 +1,42 @@
+{
+  "name": "it340-2019-carpaccio-lucdomingo",
+  "version": "1.0.0",
+  "description": "ldomingo002",
+  "main": "server.js",
+  "scripts": {
+    "test": "standard --fix && jest --collect-coverage",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnseirbTelecom/it340-2019-carpaccio-LucDomingo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnseirbTelecom/it340-2019-carpaccio-LucDomingo/issues"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "homepage": "https://github.com/EnseirbTelecom/it340-2019-carpaccio-LucDomingo#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "ngrok": "^3.2.5",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "standard": "^14.3.1"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }
+}
