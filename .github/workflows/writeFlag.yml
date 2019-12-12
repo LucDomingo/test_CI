@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - dev
+    tags:
+      - 'v*'
+jobs:
+  job_1:
+    name: Add 3 and 7
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        FLAG: ${{ github.ref }}
+        run: |
+          value=`cat flag/latest.txt`
+          expr $FLAG \* 9 > flag/lastest.txt
+      - name: Upload flag
+        uses: actions/upload-artifact@v1
+        with:
+          name: flag
+          path: flag/lastest.txt
