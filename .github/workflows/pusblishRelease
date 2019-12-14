@@ -1,9 +1,10 @@
-name: publishRelease
-
 on:
-  pull_request:
+  push:
     branches:
-      - 'master'
+      - master 
+    tags:
+    
+name: publishRelease
 jobs:
   DisplayFlag:
     runs-on: ubuntu-latest
