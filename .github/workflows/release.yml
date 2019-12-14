@@ -20,7 +20,7 @@ jobs:
           FLAG: git describe --abbrev=0 --tags
         with:
           tag_name: ${{ github.ref }}
-          release_name: Release $FLAG
+          release_name: Release ${{FLAG}}
           body: |
             Changes in this Release
             - First Change
