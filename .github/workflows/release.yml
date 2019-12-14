@@ -17,9 +17,10 @@ jobs:
         uses: actions/create-release@v1          
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-          FLAG: $(git describe --abbrev=0 --tags)
         with:
           tag_name: ${{ github.ref }}
+          env:
+            FLAG: $(git describe --abbrev=0 --tags):  
           release_name: Release ${{FLAG}}
           body: |
             Changes in this Release
