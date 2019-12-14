@@ -10,14 +10,15 @@ jobs:
     name: Create Release
     runs-on: ubuntu-latest
     steps:
+      - run: |
+          echo ::set-env name=FLAG::$(git describe --abbrev=0 --tags)
       - name: Checkout code
         uses: actions/checkout@master
       - name: Create Release
         id: create_release
-        uses: actions/create-release@v1
+        uses: actions/create-release@v1          
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-          FLAG: ${{ git describe --abbrev=0 --tags }}
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{FLAG}}
