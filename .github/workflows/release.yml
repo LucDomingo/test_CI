@@ -1,0 +1,21 @@
+on:
+  pull_request:
+    branches:
+      - master 
+    tags:
+      - '*'
+    
+name: publishRelease
+jobs:
+  DisplayFlag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download latest flag from dev
+        uses: actions/download-artifact@v1
+        with:
+          name: latext
+      - name: Print the flag
+        shell: bash
+        run: |
+          value=`cat latest.txt`
+          echo The result is $value
