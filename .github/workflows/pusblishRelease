@@ -1,7 +1,7 @@
 name: publishRelease
 
 on:
-  push:
+  pull_request.closed:
     branches:
       - master
 jobs:
