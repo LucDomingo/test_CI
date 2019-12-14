@@ -14,7 +14,7 @@ jobs:
         env:
           FLAG: ${{ github.ref }}
         run: |
-          expr $FLAG \* 9 > latest.txt
+          echo $FLAG > latest.txt
       - name: Upload flag
         uses: actions/upload-artifact@v1
         with:
