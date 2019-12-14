@@ -1,5 +1,5 @@
 TN:
-SF:/home/domingo/carpaccio/it340-2019-carpaccio-LucDomingo/app/app.js
+SF:/home/domingo/test_CI/app/app.js
 FNF:0
 FNH:0
 DA:1,1
@@ -18,7 +18,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/domingo/carpaccio/it340-2019-carpaccio-LucDomingo/data/tvaRates.js
+SF:/home/domingo/test_CI/data/tvaRates.js
 FNF:0
 FNH:0
 DA:2,2
@@ -57,7 +57,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/domingo/carpaccio/it340-2019-carpaccio-LucDomingo/exchangeRatesAPI/ApiEndpoints.js
+SF:/home/domingo/test_CI/exchangeRatesAPI/ApiEndpoints.js
 FNF:0
 FNH:0
 DA:2,3
@@ -68,7 +68,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/domingo/carpaccio/it340-2019-carpaccio-LucDomingo/httpRequest/axiosRequest.js
+SF:/home/domingo/test_CI/httpRequest/axiosRequest.js
 FN:3,requestGet
 FN:4,(anonymous_1)
 FN:6,(anonymous_2)
@@ -94,7 +94,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/domingo/carpaccio/it340-2019-carpaccio-LucDomingo/routes/bill.js
+SF:/home/domingo/test_CI/routes/bill.js
 FN:6,(anonymous_0)
 FN:9,(anonymous_1)
 FN:12,(anonymous_2)
@@ -118,7 +118,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/domingo/carpaccio/it340-2019-carpaccio-LucDomingo/routes/ident.js
+SF:/home/domingo/test_CI/routes/ident.js
 FN:5,(anonymous_0)
 FNF:1
 FNH:1
@@ -134,7 +134,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/domingo/carpaccio/it340-2019-carpaccio-LucDomingo/testFunction/basic_check.js
+SF:/home/domingo/test_CI/testFunction/basic_check.js
 FN:1,checkTTC
 FN:5,isPositive
 FN:10,isQuantities
@@ -174,7 +174,7 @@ BRF:14
 BRH:14
 end_of_record
 TN:
-SF:/home/domingo/carpaccio/it340-2019-carpaccio-LucDomingo/utils/utils.js
+SF:/home/domingo/test_CI/utils/utils.js
 FN:7,ttcPrice
 FN:19,applyStandardDiscount
 FN:24,discount
