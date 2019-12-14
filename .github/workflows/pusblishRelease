@@ -3,7 +3,7 @@ name: publishRelease
 on:
   pull_request:
     branches:
-      - master
+      - 'master'
 jobs:
   DisplayFlag:
     runs-on: ubuntu-latest
