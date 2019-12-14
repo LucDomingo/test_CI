@@ -20,4 +20,4 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: flag
-          path: flag/lastest.txt
+          path: lastest.txt
