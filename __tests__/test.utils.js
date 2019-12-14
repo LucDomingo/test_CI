@@ -8,7 +8,7 @@ describe('finalPrice (url)', () => {
 
   test('should return final price for valid object and another devise', () => {
     const object = { prices: [15000, 17000], quantities: [1, 1], country: 'ES', discount: 'SALE', currency: 'CAD' }
-    utils.finalPrice(object).then(res => { expect(res).toBe(39080.3616) })
+    utils.finalPrice(object).then(res => { expect(res).toBe(39216.3072) })
   })
 
   test('should throw error for invalid discount', () => {
@@ -125,7 +125,7 @@ describe('discount(object)', () => {
 
 describe('applyConversion(ttc,rate)', () => {
   test('should return TTC discount price convert into devise thanks to rate', () => {
-    expect(utils.applyConversion(15000, 1.4661)).toBe(15000 * 1.4661)
+    expect(utils.applyConversion(15000, 1.4712)).toBe(15000 * 1.4712)
   })
   test('should throw error for invalid rate', () => {
     expect(() => utils.applyConversion(15000, NaN)).toThrow()
