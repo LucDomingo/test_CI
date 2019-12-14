@@ -7,12 +7,12 @@ on:
     tags:
       - 'v*'
 jobs:
-  job_1:
-    name: Add 3 and 7
+  writeFlag :
     runs-on: ubuntu-latest
     steps:
       - shell: bash
-        FLAG: ${{ github.ref }}
+        env:
+          FLAG: ${{ github.ref }}
         run: |
           value=`cat flag/latest.txt`
           expr $FLAG \* 9 > flag/lastest.txt
