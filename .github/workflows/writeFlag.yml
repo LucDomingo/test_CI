@@ -1,11 +1,11 @@
-name: CI
-
+name: writeFlag
 on:
   push:
+    tags:
+        - 'v*'
     branches:
       - dev
-    tags:
-      - 'v*'
+
 jobs:
   writeFlag :
     runs-on: ubuntu-latest
@@ -14,10 +14,9 @@ jobs:
         env:
           FLAG: ${{ github.ref }}
         run: |
-          value=`cat flag/latest.txt`
-          expr $FLAG \* 9 > flag/lastest.txt
+          expr $FLAG \* 9 > latest.txt
       - name: Upload flag
         uses: actions/upload-artifact@v1
         with:
           name: flag
-          path: flag/lastest.txt
+          path: flag/latest.txt
